@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Craig Rules", "Craig Rules\Craig Rules.pyproj", "{DF5F397E-4AF4-4080-B474-B42A8427EE94}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{DF5F397E-4AF4-4080-B474-B42A8427EE94}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DF5F397E-4AF4-4080-B474-B42A8427EE94}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DF5F397E-4AF4-4080-B474-B42A8427EE94}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DF5F397E-4AF4-4080-B474-B42A8427EE94}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal

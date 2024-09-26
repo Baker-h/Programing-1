@@ -43,11 +43,17 @@ class MainForm(Form):
         self.Text = "About Me"
         self.ResumeLayout(False)
         self.PerformLayout()
-def Button1Click(self, sender, e):
-    self.label1.text = 
 
-    def Button1Click(self, sender, e):
+
+def Button1Click(self, sender, e):
         pass
 
-    def TextBox1TextChanged(self, sender, e):
+def TextBox1TextChanged(self, sender, e):
+        self.Hide
+       
+def Button1Click(self, sender, e):
+    if self.MouseClick
+    then TextBox1TextChanged._show
+        
+def Button1Click(self, sender, e):
         pass
