@@ -17,8 +17,9 @@ class MainForm(Form):
         # 
         # label1
         # 
+        self._label1.BackColor = System.Drawing.SystemColors.ActiveBorder
         self._label1.Font = System.Drawing.Font("Microsoft Sans Serif", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label1.Location = System.Drawing.Point(108, 43)
+        self._label1.Location = System.Drawing.Point(148, 46)
         self._label1.Name = "label1"
         self._label1.Size = System.Drawing.Size(643, 280)
         self._label1.TabIndex = 0
@@ -74,17 +75,14 @@ class MainForm(Form):
         
 
     def Label1Click(self, sender, e):
-        pass
+        self._label1.Text = ""
 
     def Button1Click(self, sender, e):
-        pass
-    self_label1.Text = "Hello, World!"
+        self._label1.Text = "Hello, World!"
 
     def Button3Click(self, sender, e):
-        pass
-    Self._label1.Text = ""
-
+        self._label1.Text = ""
+       
     def Button2Click(self, sender, e):
-        pass
-    Aplication.Exit()
+        Aplication.Exit()
     

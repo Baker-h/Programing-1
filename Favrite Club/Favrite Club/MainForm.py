@@ -15,8 +15,9 @@ class MainForm(Form):
         # 
         # button1
         # 
-        self._button1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        self._button1.BackColor = System.Drawing.SystemColors.ControlText
         self._button1.Font = System.Drawing.Font("MS UI Gothic", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         self._button1.Location = System.Drawing.Point(373, 338)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(196, 79)
@@ -26,7 +27,8 @@ class MainForm(Form):
         # 
         # textBox1
         # 
-        self._textBox1.BackColor = System.Drawing.SystemColors.InactiveCaption
+        self._textBox1.BackColor = System.Drawing.SystemColors.ControlText
+        self._textBox1.ForeColor = System.Drawing.SystemColors.ControlLightLight
         self._textBox1.Location = System.Drawing.Point(100, 63)
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(767, 20)
@@ -35,6 +37,7 @@ class MainForm(Form):
         # 
         # MainForm
         # 
+        self.BackColor = System.Drawing.SystemColors.InactiveBorder
         self.ClientSize = System.Drawing.Size(959, 431)
         self.Controls.Add(self._textBox1)
         self.Controls.Add(self._button1)

@@ -1,0 +1,12 @@
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Favrite Club.exe.config
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Favrite Club.exe
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Favrite Club.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\IronPython.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\IronPython.Modules.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Microsoft.Scripting.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\obj\Debug\Favrite Club.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\obj\Debug\Favrite_Club.MainForm.resources
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\obj\Debug\Favrite Club.pyproj.GenerateResource.Cache
+C:\Users\baker.h1\Desktop\Programing-1\Favrite Club\Favrite Club\obj\Debug\Favrite Club.exe
