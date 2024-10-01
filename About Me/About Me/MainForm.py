@@ -78,12 +78,7 @@ class MainForm(Form):
     
 def Label1Click(self, sender, e):
     self._label1.Text = ""
-
-
-       
-
-def TextBox1TextChanged(self, sender, e):
-   pass
+  
 
 def Button1Click(self, sender, e):
     self._label1.Text = "Hello, my name is Harrison, I am a senior at Craig high school."
@@ -93,3 +88,7 @@ def Button2Click(self, sender, e):
 
 def Button3Click(self, sender, e):
     Aplication.Exit()
+
+def TextBox1TextChanged(self, sender, e):
+   pass
+
