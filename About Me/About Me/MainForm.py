@@ -19,7 +19,7 @@ class MainForm(Form):
         # 
         self._button1.BackColor = System.Drawing.SystemColors.Info
         self._button1.Font = System.Drawing.Font("Comic Sans MS", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button1.Location = System.Drawing.Point(111, 43)
+        self._button1.Location = System.Drawing.Point(86, 43)
         self._button1.Name = "button1"
         self._button1.Size = System.Drawing.Size(139, 57)
         self._button1.TabIndex = 0
@@ -41,7 +41,7 @@ class MainForm(Form):
         # 
         self._button2.BackColor = System.Drawing.SystemColors.Info
         self._button2.Font = System.Drawing.Font("Comic Sans MS", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button2.Location = System.Drawing.Point(418, 43)
+        self._button2.Location = System.Drawing.Point(425, 43)
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(139, 57)
         self._button2.TabIndex = 3
@@ -53,7 +53,7 @@ class MainForm(Form):
         # 
         self._button3.BackColor = System.Drawing.SystemColors.Info
         self._button3.Font = System.Drawing.Font("Comic Sans MS", 14.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._button3.Location = System.Drawing.Point(708, 43)
+        self._button3.Location = System.Drawing.Point(742, 43)
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(139, 57)
         self._button3.TabIndex = 4
@@ -76,19 +76,19 @@ class MainForm(Form):
 
    
     
-def Label1Click(self, sender, e):
-    self._label1.Text = ""
-  
 
-def Button1Click(self, sender, e):
-    self._label1.Text = "Hello, my name is Harrison, I am a senior at Craig high school."
+    def Label1Click(self, sender, e):
+        self._label1.Text = ""
+        
+    def Button1Click(self, sender, e):
+        self._label1.Text = "Hello, my name is Harrison, I am a senior at Craig high school."
 
-def Button2Click(self, sender, e):
-    self._label1.Text = ""
+    def Button2Click(self, sender, e):
+        self._label1.Text = ""
 
-def Button3Click(self, sender, e):
-    Aplication.Exit()
+    def Button3Click(self, sender, e):
+        Aplication.Exit()
 
-def TextBox1TextChanged(self, sender, e):
-   pass
-
+    def TextBox1TextChanged(self, sender, e):
+        pass
+    

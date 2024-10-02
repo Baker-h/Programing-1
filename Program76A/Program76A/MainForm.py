@@ -70,6 +70,7 @@ class MainForm(Form):
         self._button2.TabIndex = 3
         self._button2.Text = "Exit"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -81,6 +82,7 @@ class MainForm(Form):
         self._button3.TabIndex = 4
         self._button3.Text = "Calculate"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # groupBox1
         # 
@@ -302,3 +304,9 @@ class MainForm(Form):
 
 
 
+
+    def Button1Click(self, sender, e):
+        self._label2.Text = ""
+
+    def Button2Click(self, sender, e):
+        Aplication.Exit()
