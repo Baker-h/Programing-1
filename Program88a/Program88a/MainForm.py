@@ -288,7 +288,7 @@ class MainForm(Form):
         Sum = num1 + num2
         Dif = num1 - num2
         Pro = num1 * num2
-        Ave = num1 + num2
+        Ave = Sum / 2
         # TODO: Finish Average
         Abs = abs(Dif)
         Max = 0

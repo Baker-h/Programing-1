@@ -1,1 +1,10 @@
 C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\obj\Debug\School Scedule.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\School Scedule.exe.config
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\School Scedule.exe
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\School Scedule.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\IronPython.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\IronPython.Modules.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\Microsoft.Scripting.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\baker.h1\Desktop\Programing-1\School Scedule\School Scedule\obj\Debug\School Scedule.exe
