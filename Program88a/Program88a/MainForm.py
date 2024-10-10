@@ -169,14 +169,14 @@ class MainForm(Form):
         self._textBox1.Location = System.Drawing.Point(144, 10)
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(246, 20)
-        self._textBox1.TabIndex = 12
+
         # 
         # textBox2
         # 
         self._textBox2.Location = System.Drawing.Point(144, 45)
         self._textBox2.Name = "textBox2"
         self._textBox2.Size = System.Drawing.Size(246, 20)
-        self._textBox2.TabIndex = 13
+
         # 
         # label10
         # 
@@ -315,8 +315,8 @@ class MainForm(Form):
         
 
     def Button2Click(self, sender, e):
-        self.textBox1.Text = ""
-        self.textBox2.Text = ""
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
         self._label10.Text = ""
         self._label11.Text = ""
         self._label12.Text = ""

@@ -1,0 +1,12 @@
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\obj\Debug\Lang58t.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\obj\Debug\Lang58t.MainForm.resources
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\obj\Debug\Lang58t.pyproj.GenerateResource.Cache
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Lang58t.exe.config
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Lang58t.exe
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Lang58t.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\IronPython.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\IronPython.Modules.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Microsoft.Scripting.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\baker.h1\Desktop\Programing-1\Lang58t\Lang58t\obj\Debug\Lang58t.exe
