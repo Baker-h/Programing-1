@@ -197,9 +197,9 @@ class MainForm(Form):
         self._label
 
     def Button2Click(self, sender, e):
-        self._label5.Text ""
-        self._label6.Text ""
-        self._label7.Text ""
+        self._label5.Text = ""
+        self._label6.Text = ""
+        self._label7.Text = ""
 
     def Button3Click(self, sender, e):
         aplication._exit()
