@@ -18,7 +18,7 @@ class MainForm(Form):
         self._button3 = System.Windows.Forms.Button()
         self._label1 = System.Windows.Forms.Label()
         self._label2 = System.Windows.Forms.Label()
-        self._Sum = System.Windows.Forms.Label()
+        self._label3 = System.Windows.Forms.Label()
         self._label4 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
@@ -72,6 +72,7 @@ class MainForm(Form):
         self._button1.TabIndex = 4
         self._button1.Text = "Calculate"
         self._button1.UseVisualStyleBackColor = False
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -81,8 +82,9 @@ class MainForm(Form):
         self._button2.Name = "button2"
         self._button2.Size = System.Drawing.Size(131, 61)
         self._button2.TabIndex = 5
-        self._button2.Text = "Calculate"
+        self._button2.Text = "Clear"
         self._button2.UseVisualStyleBackColor = False
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -92,8 +94,9 @@ class MainForm(Form):
         self._button3.Name = "button3"
         self._button3.Size = System.Drawing.Size(131, 61)
         self._button3.TabIndex = 6
-        self._button3.Text = "Calculate"
+        self._button3.Text = "Exit"
         self._button3.UseVisualStyleBackColor = False
+        self._button3.Click += self.Button3Click
         # 
         # label1
         # 
@@ -117,17 +120,17 @@ class MainForm(Form):
         self._label2.TabIndex = 8
         self._label2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # Sum
+        # label3
         # 
-        self._Sum.BackColor = System.Drawing.Color.Ivory
-        self._Sum.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
-        self._Sum.Font = System.Drawing.Font("Segoe Marker", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._Sum.Location = System.Drawing.Point(35, 243)
-        self._Sum.Name = "Sum"
-        self._Sum.Size = System.Drawing.Size(70, 37)
-        self._Sum.TabIndex = 9
-        self._Sum.Text = "Sum"
-        self._Sum.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        self._label3.BackColor = System.Drawing.Color.Ivory
+        self._label3.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D
+        self._label3.Font = System.Drawing.Font("Segoe Marker", 21.75, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label3.Location = System.Drawing.Point(35, 243)
+        self._label3.Name = "label3"
+        self._label3.Size = System.Drawing.Size(70, 37)
+        self._label3.TabIndex = 9
+        self._label3.Text = "Sum"
+        self._label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
         # label4
         # 
@@ -145,7 +148,7 @@ class MainForm(Form):
         # 
         self.ClientSize = System.Drawing.Size(468, 452)
         self.Controls.Add(self._label4)
-        self.Controls.Add(self._Sum)
+        self.Controls.Add(self._label3)
         self.Controls.Add(self._label2)
         self.Controls.Add(self._label1)
         self.Controls.Add(self._button3)
@@ -160,3 +163,39 @@ class MainForm(Form):
         self.ResumeLayout(False)
         self.PerformLayout()
 
+
+
+
+
+
+
+
+
+
+
+
+
+    def Button1Click(self, sender, e):
+        num1 = int(self._textBox1.Text)
+        num2 = int(self._textBox2.Text)
+        num3 = int(self._textBox3.Text)
+        num4 = int(self._textBox4.Text)
+        Sum = num1 + num2 + num3 + num4
+        Ave = Sum / 4.0
+
+        self._label1.Text = str(Sum)
+        self._label2.Text = str(Ave)
+        
+        
+
+    def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._textBox3.Text = ""
+        self._textBox4.Text = ""
+        self._label1.Text = ""
+        self._label2.Text = ""
+
+
+    def Button3Click(self, sender, e):
+        Application.Exit()

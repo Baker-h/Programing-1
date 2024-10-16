@@ -252,11 +252,11 @@ class MainForm(Form):
     def Button1Click(self, sender, e):
         num1 = int(self._textBox1.Text)
         num2 = int(self._textBox2.Text)
-        Doll = num1 - num2 //Whole
-        Quar = num1 - num2 - Doll //.25
-        Dim = num1 - num2 - Doll - Quar //.15
-        Nic = num1 - num2 - Doll - Quar - Dim //.10
-        Pen = num1 - num2 - Doll - Quar - Dim - Nic //.01
+        Doll = num1 // num2
+        Quar = Doll /.25
+        Dim = Quar /.15
+        Nic = Dim /.10
+        Pen = Nic /.01
 
        
             
@@ -268,6 +268,8 @@ class MainForm(Form):
         
 
     def Button2Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
         self._label8.Text = ""
         self._label9.Text = ""
         self._label10.Text = ""
