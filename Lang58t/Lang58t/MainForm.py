@@ -254,9 +254,9 @@ class MainForm(Form):
         num2 = int(self._textBox2.Text)
         Doll = num2 - num1
         Quar = Doll //.25
-        Dim = Quar //.15
-        Nic = Dim //.10
-        Pen = Nic //.01
+        Dim = Doll //.15
+        Nic = Doll //.10
+        Pen = Doll //.01
 
        
             
