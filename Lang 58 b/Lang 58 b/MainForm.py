@@ -21,7 +21,6 @@ class MainForm(Form):
         self._button3 = System.Windows.Forms.Button()
         self._label4 = System.Windows.Forms.Label()
         self._label5 = System.Windows.Forms.Label()
-        self._label6 = System.Windows.Forms.Label()
         self.SuspendLayout()
         # 
         # textBox1
@@ -33,6 +32,7 @@ class MainForm(Form):
         self._textBox1.Name = "textBox1"
         self._textBox1.Size = System.Drawing.Size(294, 33)
         self._textBox1.TabIndex = 0
+        self._textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         # 
         # textBox2
         # 
@@ -43,6 +43,7 @@ class MainForm(Form):
         self._textBox2.Name = "textBox2"
         self._textBox2.Size = System.Drawing.Size(294, 33)
         self._textBox2.TabIndex = 1
+        self._textBox2.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         # 
         # textBox3
         # 
@@ -53,6 +54,7 @@ class MainForm(Form):
         self._textBox3.Name = "textBox3"
         self._textBox3.Size = System.Drawing.Size(294, 33)
         self._textBox3.TabIndex = 2
+        self._textBox3.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         # 
         # label1
         # 
@@ -134,7 +136,7 @@ class MainForm(Form):
         self._label4.BackColor = System.Drawing.Color.MediumTurquoise
         self._label4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         self._label4.Font = System.Drawing.Font("Modern No. 20", 20.2499981, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label4.Location = System.Drawing.Point(74, 186)
+        self._label4.Location = System.Drawing.Point(74, 196)
         self._label4.Name = "label4"
         self._label4.Size = System.Drawing.Size(321, 30)
         self._label4.TabIndex = 9
@@ -145,28 +147,16 @@ class MainForm(Form):
         self._label5.BackColor = System.Drawing.Color.MediumTurquoise
         self._label5.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         self._label5.Font = System.Drawing.Font("Modern No. 20", 20.2499981, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label5.Location = System.Drawing.Point(74, 232)
+        self._label5.Location = System.Drawing.Point(74, 242)
         self._label5.Name = "label5"
         self._label5.Size = System.Drawing.Size(321, 30)
         self._label5.TabIndex = 10
         self._label5.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # label6
-        # 
-        self._label6.BackColor = System.Drawing.Color.MediumTurquoise
-        self._label6.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
-        self._label6.Font = System.Drawing.Font("Modern No. 20", 20.2499981, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
-        self._label6.Location = System.Drawing.Point(74, 280)
-        self._label6.Name = "label6"
-        self._label6.Size = System.Drawing.Size(321, 30)
-        self._label6.TabIndex = 11
-        self._label6.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.LightCyan
         self.ClientSize = System.Drawing.Size(465, 453)
-        self.Controls.Add(self._label6)
         self.Controls.Add(self._label5)
         self.Controls.Add(self._label4)
         self.Controls.Add(self._button3)
@@ -185,14 +175,15 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        Num1 = 
+        A = int(self._textBox1.Text)
+        B = int(self._textBox2.Text)
+        C = int(self._textBox3.Text)
         
+        root1 = (-B + math.sqrt(2))
+        root2 = (-B - math.sqrt(2))
         
-        
-        
-        self._label4.Text = str(Doll)
-        self._label5.Text = str(Quar)
-        self._label16.Text = str(Dim)
+        self._label4.Text = str(root1)
+        self._label5.Text = str(root2)
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
@@ -200,7 +191,6 @@ class MainForm(Form):
         self._textBox3.Text = ""
         self._label4.Text = ""
         self._label5.Text = ""
-        self._label6.Text = ""
 
 
 
