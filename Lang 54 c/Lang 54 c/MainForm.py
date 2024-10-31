@@ -152,18 +152,19 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        round(NUM_TO_BE_ROUNDED, 3)
+        area = round(3)  # round area to 3 decimal places
+        radius = float(self._textBox1.Text)
+        round(radius, 3)
         (area  * radius**2)
         pi = 3.14159
 
-        radius = float(self._textBox1.Text)
         # calculate area here ...
-        area = round(area, 3)  # round area to 3 decimal places
+      
     
 
 
     def Button2Click(self, sender, e):
-        self._textBox1.text = ""
+        self._textBox1.Text = ""
 
     def Button3Click(self, sender, e):
         Aplication._Exit()
