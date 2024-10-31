@@ -1,0 +1,12 @@
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Program 82 a.exe.config
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Program 82 a.exe
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Program 82 a.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\IronPython.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\IronPython.Modules.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Microsoft.Scripting.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\obj\Debug\Program 82 a.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\obj\Debug\Program_82_a.MainForm.resources
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\obj\Debug\Program 82 a.pyproj.GenerateResource.Cache
+C:\Users\baker.h1\Desktop\Programing-1\Program 82 a\Program 82 a\obj\Debug\Program 82 a.exe
