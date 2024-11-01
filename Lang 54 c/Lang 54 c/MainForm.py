@@ -152,22 +152,30 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        area = round(3)  # round area to 3 decimal places
-        radius = float(self._textBox1.Text)
-        round(radius, 3)
-        (area  * radius**2)
         pi = 3.14159
-
-        # calculate area here ...
+        radius = float(self._textBox1.Text)
+        area = pi * radius ** 2  # round area to 3 decimal places
+        round(radius, 3)
+        round(area, 3)
+        (area  * radius**2)
+        circumference = pi * radius
+        
+        self._label1.Text = str(radius)
+        self._label2.Text = str(area)
+        self._label3.Text = str(circumference)
+        
       
     
 
 
     def Button2Click(self, sender, e):
         self._textBox1.Text = ""
+        self._label1.Text = ""
+        self._label2.Text = ""
+        self._label3.Text = ""
 
     def Button3Click(self, sender, e):
-        Aplication._Exit()
+        Application.Exit()
 
     def MainFormLoad(self, sender, e):
         pass
