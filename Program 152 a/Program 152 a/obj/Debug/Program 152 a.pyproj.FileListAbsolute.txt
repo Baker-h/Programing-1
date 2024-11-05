@@ -1,0 +1,3 @@
+C:\Users\baker.h1\Desktop\Programing-1\Program 152 a\Program 152 a\obj\Debug\Program 152 a.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\Program 152 a\Program 152 a\obj\Debug\Program_152_a.MainForm.resources
+C:\Users\baker.h1\Desktop\Programing-1\Program 152 a\Program 152 a\obj\Debug\Program 152 a.pyproj.GenerateResource.Cache
