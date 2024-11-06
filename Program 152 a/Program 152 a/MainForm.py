@@ -76,12 +76,13 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        Sum = repeat(3 + 3 for 3000
-        
+        Sum = x = 15586428
+        while x<15586428:
+            repeat(3 + 3)
         self._label1.Text = str(Sum)
 
     def Button2Click(self, sender, e):
-        pass
+        self._label1.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
