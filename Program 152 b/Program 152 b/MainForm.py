@@ -12,6 +12,9 @@ class MainForm(Form):
         self._button1 = System.Windows.Forms.Button()
         self._button2 = System.Windows.Forms.Button()
         self._button3 = System.Windows.Forms.Button()
+        self._textBox1 = System.Windows.Forms.TextBox()
+        self._label1 = System.Windows.Forms.Label()
+        self._listBox1 = System.Windows.Forms.ListBox()
         self.SuspendLayout()
         # 
         # button1
@@ -50,16 +53,48 @@ class MainForm(Form):
         self._button3.UseVisualStyleBackColor = False
         self._button3.Click += self.Button3Click
         # 
+        # textBox1
+        # 
+        self._textBox1.Location = System.Drawing.Point(200, 17)
+        self._textBox1.Name = "textBox1"
+        self._textBox1.Size = System.Drawing.Size(197, 20)
+        self._textBox1.TabIndex = 3
+        # 
+        # label1
+        # 
+        self._label1.BackColor = System.Drawing.Color.LightCoral
+        self._label1.Font = System.Drawing.Font("Poor Richard", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._label1.Location = System.Drawing.Point(11, 9)
+        self._label1.Name = "label1"
+        self._label1.Size = System.Drawing.Size(169, 34)
+        self._label1.TabIndex = 4
+        self._label1.Text = "Enter Value:"
+        self._label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        # 
+        # listBox1
+        # 
+        self._listBox1.Font = System.Drawing.Font("Modern No. 20", 12, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._listBox1.FormattingEnabled = True
+        self._listBox1.ItemHeight = 18
+        self._listBox1.Location = System.Drawing.Point(40, 68)
+        self._listBox1.Name = "listBox1"
+        self._listBox1.Size = System.Drawing.Size(356, 256)
+        self._listBox1.TabIndex = 5
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.RosyBrown
         self.ClientSize = System.Drawing.Size(440, 430)
+        self.Controls.Add(self._listBox1)
+        self.Controls.Add(self._label1)
+        self.Controls.Add(self._textBox1)
         self.Controls.Add(self._button3)
         self.Controls.Add(self._button2)
         self.Controls.Add(self._button1)
         self.Name = "MainForm"
         self.Text = "Program 152 b"
         self.ResumeLayout(False)
+        self.PerformLayout()
 
 
     def Button1Click(self, sender, e):
