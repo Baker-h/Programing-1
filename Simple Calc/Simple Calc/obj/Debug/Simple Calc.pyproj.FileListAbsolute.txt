@@ -1,0 +1,12 @@
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Simple Calc.exe.config
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Simple Calc.exe
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Simple Calc.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\IronPython.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\IronPython.Modules.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Microsoft.Dynamic.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Microsoft.Scripting.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\bin\Debug\Microsoft.Scripting.Metadata.dll
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\obj\Debug\Simple Calc.pyprojResolveAssemblyReference.cache
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\obj\Debug\Simple_Calc.MainForm.resources
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\obj\Debug\Simple Calc.pyproj.GenerateResource.Cache
+C:\Users\baker.h1\Desktop\Programing-1\Simple Calc\Simple Calc\obj\Debug\Simple Calc.exe
