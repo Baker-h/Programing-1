@@ -23,6 +23,9 @@ class MainForm(Form):
         self._button4 = System.Windows.Forms.Button()
         self._button5 = System.Windows.Forms.Button()
         self._button6 = System.Windows.Forms.Button()
+        self._button7 = System.Windows.Forms.Button()
+        self._button8 = System.Windows.Forms.Button()
+        self._button9 = System.Windows.Forms.Button()
         self.SuspendLayout()
         # 
         # label1
@@ -125,6 +128,7 @@ class MainForm(Form):
         self._button1.TabIndex = 8
         self._button1.Text = "+"
         self._button1.UseVisualStyleBackColor = True
+        self._button1.Click += self.Button1Click
         # 
         # button2
         # 
@@ -135,6 +139,7 @@ class MainForm(Form):
         self._button2.TabIndex = 9
         self._button2.Text = "-"
         self._button2.UseVisualStyleBackColor = True
+        self._button2.Click += self.Button2Click
         # 
         # button3
         # 
@@ -145,6 +150,7 @@ class MainForm(Form):
         self._button3.TabIndex = 10
         self._button3.Text = "="
         self._button3.UseVisualStyleBackColor = True
+        self._button3.Click += self.Button3Click
         # 
         # button4
         # 
@@ -166,6 +172,7 @@ class MainForm(Form):
         self._button5.TabIndex = 12
         self._button5.Text = "/"
         self._button5.UseVisualStyleBackColor = True
+        self._button5.Click += self.Button5Click
         # 
         # button6
         # 
@@ -176,11 +183,48 @@ class MainForm(Form):
         self._button6.TabIndex = 13
         self._button6.Text = "//"
         self._button6.UseVisualStyleBackColor = True
+        self._button6.Click += self.Button6Click
+        # 
+        # button7
+        # 
+        self._button7.Font = System.Drawing.Font("MS PGothic", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button7.Location = System.Drawing.Point(357, 154)
+        self._button7.Name = "button7"
+        self._button7.Size = System.Drawing.Size(92, 49)
+        self._button7.TabIndex = 14
+        self._button7.Text = "MOD"
+        self._button7.UseVisualStyleBackColor = True
+        self._button7.Click += self.Button7Click
+        # 
+        # button8
+        # 
+        self._button8.Font = System.Drawing.Font("MS PGothic", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button8.Location = System.Drawing.Point(330, 218)
+        self._button8.Name = "button8"
+        self._button8.Size = System.Drawing.Size(144, 49)
+        self._button8.TabIndex = 15
+        self._button8.Text = "Clear"
+        self._button8.UseVisualStyleBackColor = True
+        self._button8.Click += self.Button8Click
+        # 
+        # button9
+        # 
+        self._button9.Font = System.Drawing.Font("MS PGothic", 18, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._button9.Location = System.Drawing.Point(330, 280)
+        self._button9.Name = "button9"
+        self._button9.Size = System.Drawing.Size(144, 49)
+        self._button9.TabIndex = 16
+        self._button9.Text = "Exit"
+        self._button9.UseVisualStyleBackColor = True
+        self._button9.Click += self.Button9Click
         # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.Honeydew
         self.ClientSize = System.Drawing.Size(501, 341)
+        self.Controls.Add(self._button9)
+        self.Controls.Add(self._button8)
+        self.Controls.Add(self._button7)
         self.Controls.Add(self._button6)
         self.Controls.Add(self._button5)
         self.Controls.Add(self._button4)
@@ -201,5 +245,68 @@ class MainForm(Form):
         self.PerformLayout()
 
 
+    def Button9Click(self, sender, e):
+        Application.Exit()
+
+    def Button8Click(self, sender, e):
+        self._textBox1.Text = ""
+        self._textBox2.Text = ""
+        self._label6.Text = ""
+        self._label5.Text = ""
+        
+
+    def Button1Click(self, sender, e):
+        self._label5.Text = "+"
+        
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        
+        Add = Num1 + Num2
+
+    def Button2Click(self, sender, e):
+        self._label5.Text = "-"
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        Sub = Num1 - Num2
+        
+    def Button3Click(self, sender, e):
+        self._label5.Text = "="
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        Eq = Num1 == Num2
+        
     def Button4Click(self, sender, e):
-        pass
+        self._label5.Text = "^"
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        Car = Num1 ^ Num2
+
+    def Button5Click(self, sender, e):
+        self._label5.Text = "/"
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        Div = Num1 / Num2
+
+    def Button6Click(self, sender, e):
+        self._label5.Text = "//"
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        Double = Num1 // Num2
+
+    def Button7Click(self, sender, e):
+        Num1 = int(self._textBox1.Text)
+        Num2 = int(self._textBox2.Text)
+        
+        if self._label5.Text == "+":
+            Add = Num1 + Num2
+            self._label6.Text = str(Add)
+            
+        if self._label5.Text == "-":
+            Sub = Num1 - Num2
+            self._label6.Text = str(Sub)
+            
+        if self._label5.Text == "+":
+            Add = Num1 + Num2
+            self._label6.Text = str(Add)
+            
+            
