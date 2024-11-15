@@ -305,8 +305,20 @@ class MainForm(Form):
             Sub = Num1 - Num2
             self._label6.Text = str(Sub)
             
-        if self._label5.Text == "+":
-            Add = Num1 + Num2
-            self._label6.Text = str(Add)
+        if self._label5.Text == "=":
+            Eq = Num1 == Num2
+            self._label6.Text = str(Eq)
+            
+        if self._label5.Text == "^":
+            Car = Num1 ** Num2
+            self._label6.Text = str(Car)
+            
+        if self._label5.Text == "/":
+            Div = Num1 / Num2
+            self._label6.Text = str(Div)
+            
+        if self._label5.Text == "//":
+            Double = Num1 // Num2
+            self._label6.Text = str(Double)
             
             

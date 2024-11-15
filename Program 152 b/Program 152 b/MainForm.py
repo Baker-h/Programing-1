@@ -101,7 +101,7 @@ class MainForm(Form):
         pass
 
     def Button2Click(self, sender, e):
-        pass
+        self._textBox1.Text = ""
 
     def Button3Click(self, sender, e):
         Application.Exit()
