@@ -1,0 +1,18 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+# SharpDevelop 4.4
+Project("{FD48973F-F585-4F70-812B-4D0503B36CE9}") = "Slot Machine", "Slot Machine\Slot Machine.pyproj", "{877C892B-2B38-45F5-8DF5-3E9F5490B96A}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{877C892B-2B38-45F5-8DF5-3E9F5490B96A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{877C892B-2B38-45F5-8DF5-3E9F5490B96A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{877C892B-2B38-45F5-8DF5-3E9F5490B96A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{877C892B-2B38-45F5-8DF5-3E9F5490B96A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+EndGlobal
