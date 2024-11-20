@@ -122,11 +122,12 @@ class MainForm(Form):
         # 
         # textBox1
         # 
-        self._textBox1.Font = System.Drawing.Font("Microsoft Sans Serif", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
+        self._textBox1.Font = System.Drawing.Font("MS Gothic", 20.25, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, 0)
         self._textBox1.Location = System.Drawing.Point(656, 304)
         self._textBox1.Name = "textBox1"
-        self._textBox1.Size = System.Drawing.Size(123, 38)
+        self._textBox1.Size = System.Drawing.Size(123, 34)
         self._textBox1.TabIndex = 7
+        self._textBox1.TextAlign = System.Windows.Forms.HorizontalAlignment.Center
         # 
         # label2
         # 
@@ -323,8 +324,8 @@ class MainForm(Form):
         image1 = self._pictureBox5.BackgroundImage
         image2 = self._pictureBox6.BackgroundImage
         image3 = self._pictureBox7.BackgroundImage
-        levOff = self._pictureBox8.BackgroundImage
-        levOn = self._pictureBox9.BackgroundImage
+        levOff = self._pictureBox10.BackgroundImage
+        levOn = self._pictureBox11.BackgroundImage
         rnd = System.Random()
         num1 = 0
         num2 = 0
@@ -335,22 +336,22 @@ class MainForm(Form):
             return
     
     
-    money = float(self._textBox1.Text)
-    bet = float(self._textBox1.Text)
-    newmoney = money - bet
+        money = float(self._label2.Text)
+        bet = float(self._textBox1.Text)
+        newmoney = money - bet
     
-    if money == 0:
-        MessageBox.Show("You have no money left")
-    elif bet < 1:
-        MessageBox.Show("You must bet at least $1")
-    elif bet > money and bet > newmoney:
-        MessageBox.Show("You don't have enough money")
-    else:
-        self._button1.BackgroundImage = LevOn
-        self._pictureBox4.Visible = True
-        self._timer1.Enabled = True
-        self._progressBar1.Value = 0
-        self._label2.Text = str(round(newmoney, 2))
+        if money == 0:
+            MessageBox.Show("You have no money left")
+        elif bet < 1:
+            MessageBox.Show("You must bet at least $1")
+        elif bet > money and bet > newmoney:
+            MessageBox.Show("You don't have enough money")
+        else:
+            self._button1.BackgroundImage = levOn
+            self._pictureBox4.Visible = True
+            self._timer1.Enabled = True
+            self._progressBar1.Value = 0
+            self._label2.Text = str(round(newmoney, 2))
         
         num1 = self.num1
         num2 = self.num2
@@ -387,8 +388,8 @@ class MainForm(Form):
         image1 = self._pictureBox5.BackgroundImage
         image2 = self._pictureBox6.BackgroundImage
         image3 = self._pictureBox7.BackgroundImage
-        levOff = self._pictureBox8.BackgroundImage
-        levOn = self._pictureBox9.BackgroundImage
+        levOff = self._pictureBox10.BackgroundImage
+        levOn = self._pictureBox11.BackgroundImage
         rnd = System.Random()
         num1 = 0
         num2 = 0
@@ -413,8 +414,8 @@ class MainForm(Form):
             pb2.BackgroundImage = images[num2 - 1]
             pb3.BackgroundImage = images[num3 - 1]
             
-            self._ProgressBar1.Increment(1)
-            if self._ProgressBar1.Value == self._ProgressBar1.Maximum:
+            self._progressBar1.Increment(1)
+            if self._progressBar1.Value == self._progressBar1.Maximum:
                 self._Timer1Tick.Enabled = False
                 self._PictureBox4.Visible = False
                 self._button1.BackgroundImage = LevOff
