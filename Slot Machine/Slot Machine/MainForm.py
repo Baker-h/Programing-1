@@ -24,7 +24,6 @@ class MainForm(Form):
         self._textBox1 = System.Windows.Forms.TextBox()
         self._label2 = System.Windows.Forms.Label()
         self._label3 = System.Windows.Forms.Label()
-        self._label4 = System.Windows.Forms.Label()
         self._pictureBox5 = System.Windows.Forms.PictureBox()
         self._pictureBox6 = System.Windows.Forms.PictureBox()
         self._pictureBox7 = System.Windows.Forms.PictureBox()
@@ -33,6 +32,7 @@ class MainForm(Form):
         self._pictureBox10 = System.Windows.Forms.PictureBox()
         self._pictureBox11 = System.Windows.Forms.PictureBox()
         self._timer1 = System.Windows.Forms.Timer(self._components)
+        self._progressBar1 = System.Windows.Forms.ProgressBar()
         self._pictureBox1.BeginInit()
         self._pictureBox2.BeginInit()
         self._pictureBox3.BeginInit()
@@ -150,14 +150,6 @@ class MainForm(Form):
         self._label3.Text = "Cash:"
         self._label3.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         # 
-        # label4
-        # 
-        self._label4.BackColor = System.Drawing.Color.SeaShell
-        self._label4.Location = System.Drawing.Point(471, 383)
-        self._label4.Name = "label4"
-        self._label4.Size = System.Drawing.Size(333, 21)
-        self._label4.TabIndex = 10
-        # 
         # pictureBox5
         # 
         self._pictureBox5.BackColor = System.Drawing.Color.Gainsboro
@@ -246,10 +238,18 @@ class MainForm(Form):
         # 
         self._timer1.Tick += self.Timer1Tick
         # 
+        # progressBar1
+        # 
+        self._progressBar1.Location = System.Drawing.Point(473, 384)
+        self._progressBar1.Name = "progressBar1"
+        self._progressBar1.Size = System.Drawing.Size(326, 23)
+        self._progressBar1.TabIndex = 18
+        # 
         # MainForm
         # 
         self.BackColor = System.Drawing.Color.PeachPuff
         self.ClientSize = System.Drawing.Size(832, 411)
+        self.Controls.Add(self._progressBar1)
         self.Controls.Add(self._pictureBox11)
         self.Controls.Add(self._pictureBox10)
         self.Controls.Add(self._pictureBox9)
@@ -257,7 +257,6 @@ class MainForm(Form):
         self.Controls.Add(self._pictureBox7)
         self.Controls.Add(self._pictureBox6)
         self.Controls.Add(self._pictureBox5)
-        self.Controls.Add(self._label4)
         self.Controls.Add(self._label3)
         self.Controls.Add(self._label2)
         self.Controls.Add(self._textBox1)
@@ -324,6 +323,8 @@ class MainForm(Form):
         image1 = self._pictureBox5.BackgroundImage
         image2 = self._pictureBox6.BackgroundImage
         image3 = self._pictureBox7.BackgroundImage
+        image4 = self._pictureBox8.BackgroundImage
+        image5 = self._pictureBox9.BackgroundImage
         levOff = self._pictureBox10.BackgroundImage
         levOn = self._pictureBox11.BackgroundImage
         rnd = System.Random()
@@ -366,7 +367,7 @@ class MainForm(Form):
         if num1 == 4 and num2 == 4 and num3 == 4:
             newmoney += bet * 2
         if num1 == 5 and num2 == 5 and num3 == 5:
-            newmoney += bet * 2
+            newmoney += bet * 5
         
         self.num1 = 0
         self.num2 = 0
@@ -388,6 +389,8 @@ class MainForm(Form):
         image1 = self._pictureBox5.BackgroundImage
         image2 = self._pictureBox6.BackgroundImage
         image3 = self._pictureBox7.BackgroundImage
+        image4 = self._pictureBox8.BackgroundImage
+        image5 = self._pictureBox9.BackgroundImage
         levOff = self._pictureBox10.BackgroundImage
         levOn = self._pictureBox11.BackgroundImage
         rnd = System.Random()
@@ -399,7 +402,7 @@ class MainForm(Form):
         pb1 = self._pictureBox1
         pb2 = self._pictureBox2
         pb3 = self._pictureBox3
-        images = [in1, in2, in3, in4, in5]
+        images = [image1, image2, image3, image4, image5]
         
         for lcv in range(0, 1000):
             num1 = rnd.Next(1, 6) # Generate random number between 1 and 5
@@ -416,8 +419,8 @@ class MainForm(Form):
             
             self._progressBar1.Increment(1)
             if self._progressBar1.Value == self._progressBar1.Maximum:
-                self._Timer1Tick.Enabled = False
-                self._PictureBox4.Visible = False
-                self._button1.BackgroundImage = LevOff
+                self._timer1.Enabled = False
+                self._pictureBox4.Visible = False
+                self._button1.BackgroundImage = levOff
         
         pass
