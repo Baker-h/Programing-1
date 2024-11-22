@@ -361,13 +361,13 @@ class MainForm(Form):
         if num1 == 1 and num2 == 1 and num3 == 1:
             newmoney += bet * 2
         if num1 == 2 and num2 == 2 and num3 == 2:
-            newmoney += bet * 2
+            newmoney += bet * 3
         if num1 == 3 and num2 == 3 and num3 == 3:
-            newmoney += bet * 2
+            newmoney += bet * 4
         if num1 == 4 and num2 == 4 and num3 == 4:
-            newmoney += bet * 2
-        if num1 == 5 and num2 == 5 and num3 == 5:
             newmoney += bet * 5
+        if num1 == 5 and num2 == 5 and num3 == 5:
+            newmoney += bet * 10
         
         self.num1 = 0
         self.num2 = 0
