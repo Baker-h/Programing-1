@@ -76,7 +76,7 @@ class MainForm(Form):
 
 
     def Button1Click(self, sender, e):
-        Sum = for 9669 repeat(3 + 3)
+        Sum = repeat(3 + 3) # While loop is the only thing that works here, for loop does not work. Assiment not completable to my/google's knowlage.
         self._label1.Text = str(Sum)
 
     def Button2Click(self, sender, e):
