@@ -78,6 +78,7 @@ class MainForm(Form):
         self._lblleft.Name = "lblleft"
         self._lblleft.Size = System.Drawing.Size(20, 100)
         self._lblleft.TabIndex = 4
+        self._lblleft.Click += self.LblleftClick
         # 
         # lblright
         # 
@@ -147,7 +148,10 @@ class MainForm(Form):
             
         if ball.Location.X <= 0 or ball.Location.X < lpdl.Left - 20:
                """ TODO: FINISH LEFT BOUNDARY """
-               pass
+               rscore += 1
+               self._rightscore.Text = str(rscore)
+               ball.Right = self.Width // 2
+               ball.Top = self.Height // 2
            
         if ball.Location.X >= self.Width or ball.Location.X > rpdl.Right + 20:
                lscore += 1
@@ -199,6 +203,8 @@ class MainForm(Form):
             rpdl.Top = (self.Height // 2) - 50 + rpdl.Height
             """ TODO: RESET SECRETS """
             bl.BackColor = Color.White
+            self.BackColor = Color.Black
+            self._lblleft.BackColor = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
@@ -225,12 +231,13 @@ class MainForm(Form):
                 self.flagright = True
                 tright.Enabled = True
         
-        """ TODO: FINISH MULTIPLAYER CONTROLS """
         if tmult.Enabled and tball.Enabled:
             if e.KeyCode == Keys.W:
-                pass
+                self.flagleft = False
+                tleft.Enabled = True
             elif e.KeyCode == Keys.S:
-                pass
+                self.flagleft = True
+                tleft.Enabled = True
         pass
 
     def MainFormLoad(self, sender, e):
@@ -255,8 +262,9 @@ class MainForm(Form):
 
     def LblballClick(self, sender, e):
         self._lblball.BackColor = Color.Red
-        self.BackColor = Color.Green  # Form BG Color
+        self.BackColor = Color.Blue  # Form BG Color
         """ TODO: PUT MORE EASTER EGGS LATER """
+        
 
     def MainFormSizeChanged(self, sender, e):
         self._lblright.Left = self.Width - 25 - self._lblright.Width
@@ -264,3 +272,12 @@ class MainForm(Form):
         self._lbltitle.Width = self.Width - 25
         self._lblball.Left = self.Width // 2
         self._lblball.Top = self.Height // 2
+
+    def LblleftClick(self, sender, e):
+        self._lblleft.BackColor = Color.Yellow
+        if flagd == True:
+            pdl.Top += 4
+        else:
+            pdl.Top -= 4
+        if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
+            tmr.Enabled = False
