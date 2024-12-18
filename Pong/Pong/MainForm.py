@@ -275,9 +275,5 @@ class MainForm(Form):
 
     def LblleftClick(self, sender, e):
         self._lblleft.BackColor = Color.Yellow
-        if flagd == True:
-            pdl.Top += 4
-        else:
-            pdl.Top -= 4
-        if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
-            tmr.Enabled = False
+        
+
