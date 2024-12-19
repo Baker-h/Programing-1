@@ -159,7 +159,7 @@ class MainForm(Form):
                ball.Left = self.Width // 2
                ball.Top = self.Height // 2
                
-        """ TODO: FINISH RIGHT SCORE WIN CONDITION """
+
         
         if lscore == 10:  # Left win condition
             self._timerball.Enabled = False
@@ -169,9 +169,19 @@ class MainForm(Form):
             self._lbltitle.Text = "Left Player Wins! Press R to restart"
             self._lbltitle.Visible = True
             
+        if rscore == 10:  # Right win condition
+            self._timerball.Enabled = False
+            ball.Right = self.Width // 2
+            ball.Top = self.Height // 2
+            self.ballup = 0
+            self._lbltitle.Text = "Right Player Wins! Press R to restart"
+            self._lbltitle.Visible = True
+            
         """ TODO: ? """
         if self._timerboolean.Enabled:
             lpdl.Top = ball.Top - 20
+        if self._lblleft.BackColor == Color.Yellow:
+            lpdl.Top = ball.Top - 1
         pass
 
     def MainFormKeyDown(self, sender, e):
