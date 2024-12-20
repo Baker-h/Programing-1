@@ -1,5 +1,6 @@
 ﻿import System.Drawing
 import System.Windows.Forms
+import _random
 
 from System.Drawing import *
 from System.Windows.Forms import *
@@ -87,6 +88,7 @@ class MainForm(Form):
         self._lblright.Name = "lblright"
         self._lblright.Size = System.Drawing.Size(20, 100)
         self._lblright.TabIndex = 5
+        self._lblright.Click += self.LblrightClick
         # 
         # timerright
         # 
@@ -178,6 +180,7 @@ class MainForm(Form):
             self._lbltitle.Visible = True
             
         """ TODO: ? """
+
         if self._timerboolean.Enabled:
             lpdl.Top = ball.Top - 20
         if self._lblleft.BackColor == Color.Yellow:
@@ -215,6 +218,7 @@ class MainForm(Form):
             bl.BackColor = Color.White
             self.BackColor = Color.Black
             self._lblleft.BackColor = Color.White
+            self._lblright.BackColor = Color.White
             
         if e.KeyCode == Keys.R:
             reset()
@@ -263,6 +267,12 @@ class MainForm(Form):
             pdl.Top -= 5
         if pdl.Top <= 10 or pdl.Bottom >= self.Height - 50:
             tmr.Enabled = False
+        if self._lblright.BackColor == Color.Green:
+            if flagd == True:
+                pdl.Top += 10
+            else:
+                pdl.Top -= 10
+            
 
     def TimerrightTick(self, sender, e):
         self.pdlTick(self._lblright, self.flagright, self._timerright)
@@ -286,4 +296,5 @@ class MainForm(Form):
     def LblleftClick(self, sender, e):
         self._lblleft.BackColor = Color.Yellow
         
-
+    def LblrightClick(self, sender, e):
+        self._lblright.BackColor = Color.Green
